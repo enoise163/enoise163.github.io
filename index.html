@@ -14,10 +14,12 @@ title: 我的博客
     {% endfor %}
 </ul>
 
-{% highlight php %}
-    <?php
-        for($i = 0; $i < 10; $i++) {
-            ehco $i;
-        }
-    ?>
+{% highlight ruby  %}
+    def show
+        @widget = Widget(params[:id])
+        repond_to do | format | 
+            format.html # show.html.erb
+            format.json { render json: @widget }
+        end
+    end
 {% endhighlight %}
